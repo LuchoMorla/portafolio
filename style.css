@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62,5%;
+}
+.nav {
+    background-color: #b6fac7;
+    max-height: 65px;
+}
+.nav img, ul {
+    display: inline-flex;
+}
+.logo{
+    width: 90px;
+    height: 100px;
+    position: relative;
+    bottom: 25px;
+}
+.main-nav {
+    margin-top: 0px;
+    list-style: none;
+    padding-left: 100px;
+    position: relative;
+    top: -60px;
+    left: 100px;
+}
+.main-nav__item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    position: static; /*relative para poderlo posicionar como yo quiero en el home, pero se rompe en los otros lugares*/
+    top: -50px;
+    left: 150px;
+}
+.main-nav__item a {
+    color:  yellowgreen;
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.main-nav__item a:hover {
+    color: purple;
+    border: 2px solid purple;
+}
+.main-nav__item a:active {
+    color: red;
+}
+.main-nav__item a::after {
+    content: " | "
+}
+.main-item a {
+    color:  yellowgreen;
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.main-item a:hover {
+    color: white;
+}
+.main-item a:active {
+    color: red;
+}
+
